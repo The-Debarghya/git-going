@@ -12,7 +12,8 @@ go build .
 ```
  **OR:**
 * Use `go get github.com/The-Debarghya/git-going` to download the package and install it using `go install`. <br>
- **OR:**
+
+**OR:**
 * Download directly from the <a href="https://github.com/The-Debarghya/git-going/releases/tag/v1.0.0">Releases</a> section.
 
  **OPTIONS:**
