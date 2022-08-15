@@ -4,11 +4,6 @@ import (
   "flag"
 )
 
-// IDEA: generates a graph of git contributions
-func Stats(email string)  {
-  print("stats")
-}
-
 func main(){
 
   var folder string
