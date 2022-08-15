@@ -11,12 +11,12 @@ cd git-going/
 go build .
 ```
  **OR:**
-* Use `go get github.com/The-Debarghya/git-going` to download the package and install it using `go install`.
+* Use `go get github.com/The-Debarghya/git-going` to download the package and install it using `go install`. <br>
+ **OR:**
+* Download directly from the <a href="https://github.com/The-Debarghya/git-going/releases/tag/v1.0.0">Releases</a> section.
+
  **OPTIONS:**
 
 * `git-going -add [path/to/your/folder]` : adds new entries of local git repositories and stores in *~/.git-going_local-stats*.
 
 * `git-going -email email@yourdomain.com` : prints the contribution map of the stored folders.
-
-  **USING DOCKER:** <br>
-  *Yet to add the docs*
