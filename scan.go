@@ -34,7 +34,7 @@ func scanGitFolders(folders []string, folder string)  []string{
       if file.Name() == ".git" {
         path = strings.TrimSuffix(path, "/.git")
         fmt.Println(path)
-        folders = append(folders)
+        folders = append(folders, path)
         continue
       }
       if file.Name() == "node_modules" || file.Name() == "vendor" {
@@ -62,7 +62,7 @@ func getFilePath() string {
 }
 
 func openFile(filePath string) *os.File {
-  f, err := os.OpenFile(filePath, os.O_APPEND|os.O_WRONLY, 0755)
+  f, err := os.OpenFile(filePath, os.O_APPEND|os.O_RDWR|os.O_RDONLY, 0755)
 
   if err != nil {
     if os.IsNotExist(err) {

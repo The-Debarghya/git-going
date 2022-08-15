@@ -188,14 +188,14 @@ func printDayCol(day int) {
 // IDEA: Prints each cell according to number of commits
 func printCell(val int, this bool)  {
 
-  escape := "\033[0;37;30m"
+  escape := "\033[0;37;33m"
   switch {
     case val > 0 && val < 5:
-        escape = "\033[1;30;47m"
+        escape = "\033[1;33;42m"
     case val >= 5 && val < 10:
-        escape = "\033[1;30;43m"
+        escape = "\033[1;32;46m"
     case val >= 10:
-        escape = "\033[1;30;42m"
+        escape = "\033[1;33;43m"
   }
 
   if this {
