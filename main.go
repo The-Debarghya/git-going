@@ -6,15 +6,15 @@ import (
 
 func main(){
 
-  var folder string
+  var parentFolder string
   var email string
 
-  flag.StringVar(&folder, "add", "", "Add a folder to scan for Git repositories")
+  flag.StringVar(&parentFolder, "add", "", "Add a folder to scan for Git repositories")
   flag.StringVar(&email, "email", "example@yourdomain.com", "Email to scan")
   flag.Parse()
 
-  if folder != "" {
-    Scan(folder)
+  if parentFolder != "" {
+    Scan(parentFolder)
     return
   }
 
